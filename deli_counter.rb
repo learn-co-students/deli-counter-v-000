@@ -1,12 +1,9 @@
 def line(line)
   if line.size > 0
-    positions_and_names = ""
+    status = "The line is currently:"
     i = 1
-    line.each do |person|
-      positions_and_names << "#{i}. #{person} "
-      i += 1
-    end
-    puts "The line is currently: #{positions_and_names}".strip
+    line.each {|person| status << " #{i}. #{person}"; i += 1}
+    puts status
   else
     puts "The line is currently empty."
   end
@@ -19,8 +16,7 @@ end
 
 def now_serving(line)
   if line.size > 0
-    puts "Currently serving #{line.first}."
-    line.shift
+    puts "Currently serving #{line.shift}."
   else
     puts "There is nobody waiting to be served!"
   end
