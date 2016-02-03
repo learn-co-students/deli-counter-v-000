@@ -11,13 +11,9 @@ def line(katz_deli)
   if katz_deli == []
     puts "The line is currently empty."
   else
-   i= 0
    current_line = "The line is currently:"
-    while i < katz_deli.size
-  current_line += " #{i+1}. #{katz_deli[i]}"
-    i += 1
-   end
-  puts current_line
+    katz_deli.each_with_index {|customer, i| current_line += " #{i+1}. #{customer}" }
+   puts current_line
   end
 end
 
