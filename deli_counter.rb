@@ -1,8 +1,8 @@
 # Write your code here.
 require 'pry'
- #katz_deli = ["Logan", "Avi", "Spencer"]
+
 def line(katz_deli)
- # katz_deli = []
+
   if katz_deli.size == 0
     puts "The line is currently empty."
   else
@@ -10,10 +10,10 @@ def line(katz_deli)
    # index = 0
     line_now = "The line is currently:"
     katz_deli.map.with_index do |name, index|
-  #  line_now += " #{index+1}" +". " + "#{name}"
+
     line_now  += " #{index+1}. #{name}"
   end
-#deli.collect!.with_index { |name, idx| "#{idx+1}. #{name}" }
+
     puts "#{line_now}"
   end
 
@@ -32,7 +32,7 @@ def now_serving(katz_deli)
   if katz_deli.size == 0
     puts "There is nobody waiting to be served!"
   else
-       puts"Currently serving #{katz_deli.first}."
+       puts "Currently serving #{katz_deli.first}."
        katz_deli.shift
   end
 
