@@ -8,8 +8,8 @@ def line(katz_deli)
   else
     line = ""
     katz_deli.each_with_index do |name, place|
-    line += "#{place + 1}. #{name}"
+    line += " #{place + 1}. #{name}"
   end
-  puts "The line is currently: #{line}"
+  puts "The line is currently:#{line}"
   end
 end
