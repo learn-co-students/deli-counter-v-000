@@ -1,10 +1,13 @@
 def line(deli)
+  queue = "The line is currently: "
   if deli.size == 0
     puts "The line is currently empty."
   else
     deli.each_with_index do | name, index |
-      puts "The line is currently: #{index + 1}. #{name}"
+      queue << index.to_str + 1
+      queue << name
     end
+    puts queue
   end
 end
 
