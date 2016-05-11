@@ -6,8 +6,7 @@ def line(katz_deli)
     print "The line is currently:"
     count = 0
     while count < katz_deli.size
-      print " #{count + 1}. "
-      print katz_deli[count]
+      puts " #{count + 1}.  #{katz_deli[count]}"
       count += 1
     end
     print "\n"
