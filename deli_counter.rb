@@ -44,15 +44,12 @@ end
 
 
 def now_serving(katz_deli)
-	wordz = "Currently "
 	if katz_deli.length == 0
 		wordz = "There is nobody waiting to be served!"
 	end
 
-	katz_deli.each do |person|
+	 "Currently serving #{katz_deli[0]}."
 		katz_deli.shift
-		wordz << "serving #{person}."
-
 	end
 	puts wordz
 end
