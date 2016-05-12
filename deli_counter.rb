@@ -24,32 +24,24 @@ end
 
 
 def take_a_number(katz_deli, new_person)
-  wordz = "Welcome, "
   line_count = 1
-	position = 0
 	katz_deli << new_person
+	position = katz_deli.size
 
 	if katz_deli.length == 0
-    wordz = "Welcome, #{new_person}. You are number #{line_count} in line."
+    puts "Welcome, #{new_person}. You are number #{line_count} in line."
   else
-		katz_deli.each do |customer|
-    wordz << "#{new_person}. You are number #{line_count[position]} in line."
-    line_count += 1
-		position += 1
+		puts "Welcome, #{new_person}. You are number #{position} in line."
   end
-end
-  puts wordz
 end
 
 
 
 def now_serving(katz_deli)
 	if katz_deli.length == 0
-		wordz = "There is nobody waiting to be served!"
-	end
-
-	 "Currently serving #{katz_deli[0]}."
+		puts "There is nobody waiting to be served!"
+	else
+	 puts "Currently serving #{katz_deli[0]}."
 		katz_deli.shift
 	end
-	puts wordz
 end
