@@ -8,7 +8,7 @@ def line(katz_deli)
   else
     sentence  = "The line is currently: "
     katz_deli.each_with_index {|name, index| sentence << "#{index + 1}. #{name} " }
-    puts sentence.chomp
+    puts sentence
   end
 end
 
