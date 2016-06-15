@@ -15,13 +15,18 @@ def take_a_number(katz_deli, name)
     puts "Welcome, #{name}. You are number 1 in line."
     katz_deli.push(name)
   else
-    puts "Welcome, #{name}. You are number 4 in line."
+    puts "Welcome, #{name}. You are number #{katz_deli.length + 1} in line."
     katz_deli.push(name)
   end
 end
 
-def now_serving
-
+def now_serving(katz_deli)
+  if katz_deli.size == 0
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{katz_deli[0]}."
+    katz_deli.shift
+  end
 end
 
 
