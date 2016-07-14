@@ -12,19 +12,15 @@ def line(deli)
 end
 
 def take_a_number(deli,name)
-  deli.empty? ? deli.unshift(name) : deli.push(name)
-  position = deli.size
-  puts "Welcome, #{name}. You are number #{position} in line."
+  deli << name
+  puts "Welcome, #{name}. You are number #{deli.length} in line."
 end
 
 def now_serving(deli)
   if deli.empty?
     puts "There is nobody waiting to be served!"
   else
-    name = deli.first
-    puts "Currently serving #{name}."
-    deli.delete(name)
+    puts "Currently serving #{deli.first}."
+    deli.shift
   end
-
-
 end
