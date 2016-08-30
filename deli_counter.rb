@@ -7,7 +7,7 @@ def line(katz_deli)
   else
     line = "The line is currently:"
     katz_deli.each_with_index do |name, index|
-      line.insert(-1, " #{index + 1}. #{name}")
+      line.insert(-1," #{index + 1}. #{name}")
     end
     puts line
   end
