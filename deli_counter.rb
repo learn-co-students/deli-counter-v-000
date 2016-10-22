@@ -1,10 +1,10 @@
 def line(deli_line)
   if deli_line.length > 0
-    line_array = []
+    line_string = "The line is currently:"
     deli_line.each do |name|
-      line_array[deli_line.index(name)] = "#{deli_line.index(name) + 1}. #{name}"
+      line_string << " #{deli_line.index(name) + 1}. #{name}"
     end
-    puts "The line is currently: " + "#{line_array[0]} " + "#{line_array[1]} " + "#{line_array[2]}"
+    puts line_string
   else
     puts "The line is currently empty."
   end
