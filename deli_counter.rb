@@ -13,8 +13,8 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, new_name)
-  puts "Welcome, #{new_name}. You are number #{katz_deli.size + 1} in line."
   katz_deli << new_name
+  puts "Welcome, #{new_name}. You are number #{katz_deli.size} in line."
 end
 
 def now_serving(katz_deli)
@@ -24,4 +24,4 @@ def now_serving(katz_deli)
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
   end
-end      
+end
