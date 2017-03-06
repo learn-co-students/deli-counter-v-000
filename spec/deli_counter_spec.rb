@@ -9,14 +9,14 @@ describe 'Deli Counter' do
         # This line checks the current standard output (your terminal screen)
         # to make sure the correct output has been puts'ed.
         expect($stdout).to receive(:puts).with("The line is currently empty.")
-        line(katz_deli)
+        line1(katz_deli)
       end
     end
 
     context "there are people in line" do
       it "should display the current line" do
         expect($stdout).to receive(:puts).with("The line is currently: 1. Logan 2. Avi 3. Spencer")
-        line(other_deli)
+        line2(other_deli)
       end
     end
   end
@@ -54,14 +54,14 @@ describe 'Deli Counter' do
     context "there are no people in line" do
       it "should say that the line is empty" do
         expect($stdout).to receive(:puts).with("There is nobody waiting to be served!")
-        now_serving(katz_deli)
+        now_serving1(katz_deli)
       end
     end
 
     context "there are people in line" do
       it "should serve the first person in line and remove them from the queue" do
         expect($stdout).to receive(:puts).with("Currently serving Logan.")
-        now_serving(other_deli)
+        now_serving2(other_deli)
         expect(other_deli).to eq(%w(Avi Spencer))
       end
     end
