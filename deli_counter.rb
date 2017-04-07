@@ -15,14 +15,14 @@ end
 
 def take_a_number(line_array, new_person)
   line_array << new_person
-  puts "Welcome, #{new_person}. You are number #{line_array.size} in line."
+  puts "Welcome, #{new_person}. You are number #{line_array.length} in line."
 end
 
 def now_serving(line_array)
   if line_array.empty?
     puts "There is nobody waiting to be served!"
   else
-   puts "Currently serving #{line_array[0]}."
+   puts "Currently serving #{line_array.first}."
    line_array.shift   
   end
 end
