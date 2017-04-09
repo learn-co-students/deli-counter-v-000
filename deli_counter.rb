@@ -6,9 +6,9 @@ def line(line_array)
   if line_array.size == 0
     puts "The line is currently empty."
   else
-    line_message = "The line is currently: "
-    line_array.each_with_index {|name,i| line_message += "#{i+1}. #{name} "}
-    puts line_message.strip
+    line_message = "The line is currently:"
+    line_array.each_with_index {|name,i| line_message += " #{i+1}. #{name}"} #can use shovel to add to the end of a string
+    puts line_message
   end
 end
 
@@ -19,10 +19,10 @@ end
 
 def now_serving(line_array)
 
-  if line_array.size == 0
+  if line_array.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{line_array[0]}."
+    puts "Currently serving #{line_array[0]}." #remember the first method
     line_array.shift
   end
 end
