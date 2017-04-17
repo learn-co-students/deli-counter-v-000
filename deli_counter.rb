@@ -11,8 +11,11 @@ def line(katz_deli)
         new_line << "#{index + 1}#{period} #{customer}"
     end
     puts "The line is currently: " + new_line.join(" ")
-
-
   end
 
+end
+
+def take_a_number(katz_deli, name)
+    katz_deli << name
+    puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
