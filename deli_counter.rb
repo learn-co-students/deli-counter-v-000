@@ -2,17 +2,16 @@
 katz_deli = []
 
 def line(katz_deli)
-  current_serve = "The line is currently:"
   period = "."
   new_line = []
   if katz_deli == []
     puts "The line is currently empty."
   else
     katz_deli.each_with_index do |customer, index|
-        new_line << "#{index + 1}#{period}#{customer}"
+        new_line << "#{index + 1}#{period} #{customer}"
     end
-    puts current_serve
-    puts new_line
+    puts "The line is currently: " + new_line.join(" ")
+
 
   end
 
