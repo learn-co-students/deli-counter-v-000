@@ -11,7 +11,9 @@ def line(katz_deli)
     katz_deli.each_with_index do |customer, index|
         new_line << "#{index + 1}#{period}#{customer}"
     end
-    puts "The line is currently: #{new_line}"
+    puts current_serve
+    puts new_line
+
   end
 
 end
