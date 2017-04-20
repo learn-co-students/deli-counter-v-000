@@ -23,8 +23,8 @@ def now_serving(line_status)
   if line_status.count < 1
     puts "There is nobody waiting to be served!"
   else
-      puts "Currently serving #{something.first}."
-      something.shift
+      puts "Currently serving #{line_status.first}."
+      line_status.shift
   end
 
   # line_status.empty? ? (puts "There is nobody waiting to be served!") : (puts "Currently serving #{line_status.shift}.")
