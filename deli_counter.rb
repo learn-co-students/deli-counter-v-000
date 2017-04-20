@@ -20,14 +20,12 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(line_status)
-  # if line_status.count < 1
-  #   puts "There is nobody waiting to be served!"
-  # else
-  #   line_status.each do |something|
-  #     puts "Currently serving #{something[1]}."
-  #     something.shift
-  #   end
-  # end
+  if line_status.count < 1
+    puts "There is nobody waiting to be served!"
+  else
+      puts "Currently serving #{something.first}."
+      something.shift
+  end
 
-  line_status.empty? ? (puts "There is nobody waiting to be served!") : (puts "Currently serving #{line_status.shift}.")
+  # line_status.empty? ? (puts "There is nobody waiting to be served!") : (puts "Currently serving #{line_status.shift}.")
 end
