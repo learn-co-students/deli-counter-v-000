@@ -1,11 +1,16 @@
 # Write your code here.
 def line(katz_deli)
-  test = ""
+  #test = ""
   if katz_deli.empty? 
     puts "The line is currently empty."
   else 
-    test = katz_deli.each_with_index.map {|val, index| "#{index + 1}. #{val}"}
-    puts("The line is currently: " + test.join(" "))
+    #test = katz_deli.each_with_index.map {|val, index| "#{index + 1}. #{val}"}
+    #puts("The line is currently: " + test.join(" "))
+    current_line = "The line is currently:"
+    katz_deli.each_with_index do | name, i |
+      current_line << " #{i+1}. #{name}"
+    end 
+    puts current_line
   end 
   
 end 
