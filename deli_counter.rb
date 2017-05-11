@@ -11,13 +11,8 @@ def line(katz_deli)
 end 
 
 def take_a_number(katz_deli, name)
-  if katz_deli.empty?
     katz_deli << name 
-  puts "Welcome, #{name}. You are number 1 in line." 
-  else 
-    katz_deli.push(name)
-    puts "Welcome, #{name}. You are number #{katz_deli.count} in line."
-  end         
+      puts "Welcome, #{name}. You are number #{katz_deli.length} in line." 
 end 
 
 def now_serving(katz_deli)
