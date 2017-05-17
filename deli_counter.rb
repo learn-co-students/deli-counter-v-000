@@ -23,9 +23,3 @@ def now_serving(array_line)
         array_line.shift
     end
 end
-
-array = ["g","b","a"]
-line(array)
-take_a_number(array, "greg")
-
-array.inspect
