@@ -13,8 +13,9 @@ end
 
 def line(array)
   if array.empty?
-    puts "The line is currently empty."
-  else puts "The line is currently: " + "#{array.map.with_index{|customer, i| (i+1).to_s + ". " + customer}.join(" ")}"
+    puts 'The line is currently empty.'
+  else
+    puts 'The line is currently: ' + array.map.with_index{|customer, i| "#{i+1}. #{customer}"}.join(' ')
   end
 end
 
