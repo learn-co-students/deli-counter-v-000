@@ -12,7 +12,7 @@ def line(array)
       puts line
     end
 end
-
+#finished
 def take_a_number(line, new_person)
     line.push(new_person)
     spot = line.size
