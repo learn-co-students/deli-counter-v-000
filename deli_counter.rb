@@ -15,6 +15,7 @@ end
 def take_a_number(line,customer)
   line.push(customer)
   puts "Welcome, #{customer}. You are number #{line.index(customer)+1} in line."
+  #solution: puts "Welcome, #{customer}. You are number #{line.length} in line."
 end
 
 def now_serving(line)
@@ -22,6 +23,7 @@ def now_serving(line)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{line[0]}."
-    line.shift()
+    #solution: puts "Currently serving #{deli.first}."
+    line.shift
   end
 end
