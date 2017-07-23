@@ -12,23 +12,23 @@ end
 
 
 
-def take_a_number(current_line, customer)
-  if current_line.empty?
-    current_line << "#{customer}"
+def take_a_number(deli_line, customer)
+  if deli_line.empty?
+    deli_line << "#{customer}"
   else
-    current_line << "#{customer}"
+    deli_line << "#{customer}"
   end
 
-  puts "Welcome, #{customer}. You are number #{current_line.size} in line."
-  return current_line
+  puts "Welcome, #{customer}. You are number #{deli_line.size} in line."
+  return deli_line
 end
 
 
 
-def now_serving(current_line)
-  if current_line.empty?
+def now_serving(deli_line)
+  if deli_line.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{current_line.shift()}."
+    puts "Currently serving #{deli_line.shift}."
   end
 end
