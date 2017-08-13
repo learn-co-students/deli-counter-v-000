@@ -26,6 +26,7 @@ def now_serving(deli)
   if deli.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{deli[0]}"
+    puts "Currently serving #{deli[0]}." # get first name in array
+    deli.shift # remove first name in array
   end
 end
