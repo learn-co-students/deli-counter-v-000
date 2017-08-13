@@ -15,7 +15,9 @@ def line(deli)
   end
 end
 
-def take_a_number(katz_deli, name)
+def take_a_number(deli, name)
+  deli << name # add person to the line
+  puts "Welcome, #{name}. You are number #{deli.length} in line." # count how many people are in the line. the length of the line is the line position of the last person added (ex: deli.length = 3 --> [person1 (index0), person2 (index1), person3 (index2)])
 end
 
 
