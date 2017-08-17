@@ -6,11 +6,11 @@ def line(customer)
   if customer == []
   puts "The line is currently empty."
   else
-    string ="The line is currently:"
+    string = "The line is currently:"
     customer.each_with_index do |customer, index|
-      string << " #{index + 1}. #{customer}"
+      line << " #{index + 1}. #{customer}"
     end
-    puts string
+    puts line
   end
 end
 
@@ -20,8 +20,7 @@ def take_a_number(line, name)
     puts "Welcome, #{name}. You are number 1 in line."
   else
     line << name
-    place = line.length
-    puts "Welcome, #{name}. You are number #{place} in line."
+    puts "Welcome, #{name}. You are number #{line.length} in line."
   end
 end
 
@@ -30,6 +29,16 @@ def now_serving(line)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{line[0]}."
+    line.shift
+  end
+end
+
+####### ALTERNATIVE ########
+def now_serving(line)
+  if line.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{line.first}."
     line.shift
   end
 end
