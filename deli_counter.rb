@@ -6,7 +6,7 @@ def line(customer)
   if customer == []
   puts "The line is currently empty."
   else
-    string = "The line is currently:"
+    line = "The line is currently:"
     customer.each_with_index do |customer, index|
       line << " #{index + 1}. #{customer}"
     end
