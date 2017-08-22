@@ -4,11 +4,11 @@ def line(line)
   if line.length < 1
     puts "The line is currently empty."
   else
-    message = "The line is currently: "
+    message = "The line is currently:"
     line.each_with_index do |person, index|
-       message << "#{index + 1}. #{person} "
+       message << " #{index + 1}. #{person}"
     end
-    puts message.rstrip
+    puts message
   end
 
 end
