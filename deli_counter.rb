@@ -1,4 +1,3 @@
-# katz_deli = ['bill', 'pete', 'pat']
 
 def line(katz_deli)
   line = []
