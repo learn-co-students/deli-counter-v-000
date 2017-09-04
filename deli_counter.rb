@@ -7,10 +7,10 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     deli = []
-    katz_deli.each.with_index(1) {|name, index| deli << "#{index}. #{name}" }
-    deli.unshift("The line is currently: ")
-    deli.join('')
-    puts deli
+    katz_deli.each.with_index(1) {|name, index| deli << " #{index}. #{name}" }
+    deli.unshift("The line is currently:")
+    puts deli.join('')
+
   end
 end
 
