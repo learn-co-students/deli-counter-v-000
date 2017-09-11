@@ -1,6 +1,3 @@
-require 'pry'
-katz_deli = []
-
 def line(katz_deli)
   customers = ""
   katz_deli.each_with_index { |item, index| customers << " #{index+1}. #{item}"}
