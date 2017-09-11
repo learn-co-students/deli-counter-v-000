@@ -2,9 +2,9 @@ require 'pry'
 katz_deli = []
 
 def line(katz_deli)
-  customers = String.new
+  customers = ""
   katz_deli.each_with_index { |item, index| customers << " #{index+1}. #{item}"}
-    if customers == ""
+    if katz_deli.count == 0
       puts "The line is currently empty."
     else   
       puts "The line is currently:#{customers}"
@@ -12,16 +12,15 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-    customers = String.new
-    number = String.new
   if katz_deli.count == 0
     katz_deli << name
     puts "Welcome, #{name}. You are number 1 in line."
-    elsif katz_deli.count > 0
-      katz_deli << name
-      katz_deli.each_with_index { |name, index| number = index+1}
-      puts "Welcome, #{name}. You are number #{number} in line."
-    else
+	elsif katz_deli.count > 0
+		number = 0
+		katz_deli << name
+		katz_deli.each_with_index { |name, index| number = index+1}
+		puts "Welcome, #{name}. You are number #{number} in line."
+	else
   end
 end
 
