@@ -13,3 +13,10 @@ def line(katz_deli)
     puts "The line is currently: #{line}"
   end
 end
+
+def take_a_number(katz_deli, cust)
+  katz_deli << cust
+  puts "Welcome, #{cust}. You are number #{katz_deli.index(cust) + 1} in line."
+end
+
+
