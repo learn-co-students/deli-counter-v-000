@@ -1,1 +1,15 @@
-# Write your code here.
+def line(katz_deli)
+  if katz_deli.size == 0
+    puts "The line is currently empty."
+  else
+    line =""
+    katz_deli.each_with_index do |cust, index|
+      if cust == katz_deli[-1]
+        line << "#{index + 1}. #{cust}"
+      else
+        line << "#{index + 1}. #{cust} "
+      end
+    end
+    puts "The line is currently: #{line}"
+  end
+end
