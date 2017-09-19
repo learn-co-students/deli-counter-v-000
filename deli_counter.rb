@@ -18,7 +18,7 @@
 
 def take_a_number(list, name)
    list << name
-   if list == 0
+   if list == 0 # should be list.length #
      puts "There is nobody in line."
    else
      puts "Welcome, #{name}. You are number #{list.index(name)+1} in line."
