@@ -38,6 +38,6 @@ def now_serving(list)
   end
 end
 
-names = ["Tim", "Tom", "Jim"]
-now_serving(names)
-puts names
+# names = ["Tim", "Tom", "Jim"]
+# now_serving(names)
+# puts names
