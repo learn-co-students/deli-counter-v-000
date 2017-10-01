@@ -15,10 +15,13 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name = "Ada")
-  katz_deli<<"Ada"
+  katz_deli<<name
   counter = 1
+  welcome = "Welcome, "
+  you = " you are number "
+  in_line = " in line."
   katz_deli.map do|customer|
-    puts "Welcome, #{customer}. You are number #{counter} in line."
+    welcome += "#{customer}" + you += "#{counter}" + in_line
     counter += 1
   end
 end
