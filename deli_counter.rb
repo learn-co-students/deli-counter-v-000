@@ -6,6 +6,8 @@ def line(deli)
   else
     line = deli.collect {|name| "#{deli.index(name)+1}. #{name}"}
     puts "The line is currently: #{line.join(" ")}"
+    #puts "The line is currently: #{deli.collect {|cat| "#{deli.index(cat)+1}. #{cat}"}.join(" ")}"
+    #Also works, but readability suffers
   end
 end
 
