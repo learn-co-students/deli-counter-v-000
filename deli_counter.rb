@@ -10,7 +10,7 @@ def line(katz_deli)
   end
 end
 
-#def take_a_number(katz_deli,name)
-#  katz_deli << name
-#    if katz_deli.each_with_index do |name,index|
-#    end
+def take_a_number(katz_deli,name)
+  katz_deli << name
+    if katz_deli.each_with_index do |name,index|
+    end
