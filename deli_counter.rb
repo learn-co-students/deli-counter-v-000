@@ -1,6 +1,6 @@
 require 'pry'
 def line(katz_deli)
-    
+   
    
     
         if katz_deli.empty?
@@ -9,11 +9,12 @@ def line(katz_deli)
         else  
             message = "The line is currently:"
             katz_deli.each_with_index do |name, idx|  
+binding.pry
             #idx += 1    
             message += " #{idx.to_i + 1}. #{name}" 
             end
             puts message
-        #binding.pry
+
         end
 end
 
