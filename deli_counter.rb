@@ -9,7 +9,7 @@ def line(katz_deli)
         else  
             message = "The line is currently:"
             katz_deli.each_with_index do |name, idx|  
-binding.pry
+#binding.pry
             #idx += 1    
             message += " #{idx.to_i + 1}. #{name}" 
             end
@@ -17,6 +17,8 @@ binding.pry
 
         end
 end
+
+
 
 def take_a_number(katz_deli, name)
     katz_deli << name
