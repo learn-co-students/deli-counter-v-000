@@ -7,14 +7,9 @@ def line(deli)
   puts str
 end
 
-
-
-
-
-
-
-def take_a_number(array, string)
-
+def take_a_number(deli, p)
+  deli << p
+  puts "Welcome, #{p}. You are number #{deli.index(p)+1} in line."
 end
 
 def now_serving
