@@ -12,6 +12,8 @@ def take_a_number(deli, p)
   puts "Welcome, #{p}. You are number #{deli.index(p)+1} in line."
 end
 
-def now_serving
-
+def now_serving(deli)
+    str = deli.empty?? "There is nobody waiting to be served!":"Currently serving #{deli.first}."
+    puts str
+    deli.shift()
 end
