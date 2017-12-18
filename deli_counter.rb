@@ -4,8 +4,9 @@ def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
   else
-    katz_deli.collect.with_index { |x, i| }
-    puts "The line is currently: " + { katz_deli.each { katz_deli }
+    list = katz_deli.map.with_index { |person, i| " " + ((i+1).to_s + ".") + " " + person }
+    joined = list.join
+    puts "The line is currently:" + joined
   end
 end
 
