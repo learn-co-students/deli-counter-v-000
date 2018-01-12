@@ -1,6 +1,6 @@
 def line(katz_deli)
    line = 'The line is currently:'
-   katz_deli.each_with_index.map { |name, numer_in_line| line += " #{numer_in_line + 1}. #{name}" }
+   katz_deli.each_with_index { |name, numer_in_line| line += " #{numer_in_line + 1}. #{name}" }
    puts(katz_deli.empty? ? 'The line is currently empty.' : line)
 end
 
