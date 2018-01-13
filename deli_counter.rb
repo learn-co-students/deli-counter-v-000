@@ -1,10 +1,10 @@
 def line(queue)
   if queue.length > 0
-    string = "The line is currently:"
+    current = "The line is currently:"
     queue.each_with_index { |name, index|
-      string += " #{index+1}. #{name}"
+      current += " #{index+1}. #{name}"
     }
-    puts string
+    puts current
   else
     puts "The line is currently empty."
   end
