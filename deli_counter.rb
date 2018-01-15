@@ -1,3 +1,4 @@
+
 def line(array)
 
   line_arr = array.map.each_with_index { |e,i| "#{i + 1}. #{e}"}
@@ -11,8 +12,19 @@ def line(array)
 end
 
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
+def take_a_number(array, name)
+  array << name
+  puts "Welcome, #{name}. You are number #{array.length} in line."
+end
 
-  puts "Welcome, #{name}. You are #{katz_deli.index(name) + 1} in line."
+
+def now_serving(array)
+
+  if array.length == 0
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{array.first}."
+    array.shift
+  end
+
 end
