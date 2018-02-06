@@ -8,8 +8,10 @@ def line(array)
   if array.length > 1
         array.each_with_index.collect do |name, number|
         line = line + " #{number + 1}. #{name}"
+        #string << " #{number + 1}. #{name}"
       end
       puts string + line.sub(" ", "")
+      #puts string
   else
     puts "The line is currently empty."
   end
