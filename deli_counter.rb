@@ -1,5 +1,5 @@
 def line(array)
-  if !array.any?
+  if array.empty?
     puts "The line is currently empty."
   else
     new_array = []
@@ -17,7 +17,7 @@ def take_a_number(array, name)
 end
 
 def now_serving(array)
-  if !array.any?
+  if array.empty?
     puts "There is nobody waiting to be served!"
   else
   puts "Currently serving #{array[0]}."
