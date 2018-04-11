@@ -11,7 +11,18 @@ def line(array_customers)
   end
 end
 
-#def take_a_number(katz_deli,newname)
- # puts "Welcome,#{newname}. You are number #{index+1}"
-#end
+def take_a_number(array_cust,newname)
+  array_cust << newname
+  index = array_cust.size
+ puts "Welcome, #{newname}. You are number #{index} in line."
+end
+
+def now_serving(array_cust)
+  if array_cust.size == 0
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{array_cust[0]}."
+    array_cust.shift
+  end
+end
 
