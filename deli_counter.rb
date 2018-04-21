@@ -13,7 +13,7 @@ def line(deli = katz_deli)
   end
 end
 
-def take_a_number(katz_deli, string)
+def take_a_number(katz_deli, value)
   line
   puts "#{string} i#{ndex.to_i+1}"
 end
