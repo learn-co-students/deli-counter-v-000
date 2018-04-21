@@ -15,5 +15,5 @@ end
 
 def take_a_number(katz_deli, value)
 
-  puts "#{string} #{index.to_i+1}"
+  puts " #{index.to_i+1}. #{value}"
 end
