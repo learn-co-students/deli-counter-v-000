@@ -7,7 +7,7 @@ def line(deli = katz_deli)
   else
     line_numbers = [ 1,2,3,4,5,6,7,8,9,10]
     (line_numbers.zip(deli)).join(" , ") = string
-    string.drop_while {|deli| deli.size < 3 }
+    string.drop(-1) {|deli| deli.size < 3 }
     puts "The line is currently #{string}."
   end
 end
