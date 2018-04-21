@@ -9,8 +9,6 @@ def line(deli = katz_deli)
   counter = 0
   katz_deli.each_with_index do |value, index|
     counter += 1
-  end
-
   puts "The line is currently: #{index.to_i+1}. #{value}"
 
   end
