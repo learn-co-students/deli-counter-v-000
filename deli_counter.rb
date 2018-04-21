@@ -4,7 +4,13 @@ def line(deli = katz_deli)
   if deli.length == 0
     puts "The line is currently empty."
   else
-    counter = 0
+    message="The line is currently:"
+
+    katz_deli.each_with_index do |value, index|
+      message += " #{index.to_i+1}. #{value}"
+    end
+
+    puts "#{message}"
     deli.each_with_index do |value, index|
     counter += 1
   puts "The line is currently: #{index.to_i+1}. #{value}"
