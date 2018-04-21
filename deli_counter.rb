@@ -14,6 +14,6 @@ def line(deli = katz_deli)
 end
 
 def take_a_number(katz_deli, value)
-  line
-  puts "#{string} i#{ndex.to_i+1}"
+
+  puts "#{string} #{index.to_i+1}"
 end
