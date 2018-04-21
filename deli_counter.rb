@@ -17,6 +17,8 @@ def take_a_number(katz_deli, name)
   if katz_deli == []
   puts "Welcome #{name}. You are number 1 in line."
 else
-  puts "Welcome #{name}.  You are number #{katz_deli[-1]} in line."
+  number == katz_deli[-1]
+  
+  puts "Welcome #{name}.  You are number #{} in line."
   end
 end
