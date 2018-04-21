@@ -14,6 +14,5 @@ def line(deli = katz_deli)
 end
 
 def take_a_number(katz_deli, value)
-
   puts " #{index.to_i+1}. #{value}"
 end
