@@ -9,5 +9,5 @@ def line(deli = katz_deli)
     (line_numbers.zip(deli)).join(" , ") == string
     string.length = deli.length
     puts "The line is currently #{string}."
-  ends
+  end
 end
