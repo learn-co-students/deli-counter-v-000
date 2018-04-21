@@ -8,5 +8,5 @@ def line(deli = katz_deli)
     line_numbers = deli.each_index  {|index| print index, " . " }
     line_numbers.zip(deli) == deli
     puts "The line is currently #{deli.join(" , ")}."
- end
+  end
 end
