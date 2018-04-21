@@ -6,7 +6,7 @@ def line(deli = katz_deli)
     puts "The line is currently empty."
   else
     line_numbers = [ 1,2,3,4,5,6,7,8,9,10]
-    deli = line_numbers.length
+    deli.length = line_numbers
     String == (line_numbers.zip(deli)).join(" , ")
     puts "The line is currently #{String}."
   end
