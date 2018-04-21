@@ -7,6 +7,8 @@ def line(deli = katz_deli)
   else
     line_numbers = [ 1,2,3,4,5,6,7,8,9,10]
     String == (line_numbers.zip(deli)).join(" , ")
+    if deli.size < line_numbers,
+      line_number.drop(deli.size)
     puts "The line is currently #{String}."
   end
 end
