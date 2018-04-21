@@ -18,7 +18,7 @@ def take_a_number(katz_deli, name)
   puts "Welcome #{name}. You are number 1 in line."
 else
   number == katz_deli[-1]
-  
+  number == index.to_i+1
   puts "Welcome #{name}.  You are number #{} in line."
   end
 end
