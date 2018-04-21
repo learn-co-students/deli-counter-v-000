@@ -8,7 +8,6 @@ def line(deli = katz_deli)
     line_numbers = [ 1,2,3,4,5,6,7,8,9,10]
     deli.length = line_numbers.length
     String = (line_numbers.zip(deli)).join(" , ")
-
     puts "The line is currently #{String}."
   end
 end
