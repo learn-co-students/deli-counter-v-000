@@ -2,16 +2,14 @@
 katz_deli = []
 
 def line(katz_deli)
-  if katz_deli.length > 0
-    counter = 0
+  if katz_deli.empty?
+    puts "The line is currently empty."
+  else
     output = "The line is currently:"
-    while counter < katz_deli.length
-     output << " #{counter+1}. #{katz_deli[counter]}"
-      counter += 1
+    katz_deli.each.with_index(1) do |customer, i|
+      output << " #{i}. #{customer}"
     end
     puts output
-  else 
-    puts "The line is currently empty."
   end
 end
 
@@ -21,7 +19,7 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  if katz_deli.length == 0
+  if katz_deli.empty?
     puts "There is nobody waiting to be served!"
   else 
       puts "Currently serving #{katz_deli[0]}."
