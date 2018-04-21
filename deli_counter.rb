@@ -7,8 +7,6 @@ def line(deli = katz_deli)
   else
     line_numbers = deli.each_index + 1
     line_numbers.zip(deli) = deli
-
-
     puts "The line is currently #{deli.join(" , ")}."
  end
 end
