@@ -10,9 +10,5 @@ def line(deli = katz_deli)
     end
 
     puts "#{message}"
-    deli.each_with_index do |value, index|
-    counter += 1
-  puts "The line is currently: #{index.to_i+1}. #{value}"
-    end
   end
 end
