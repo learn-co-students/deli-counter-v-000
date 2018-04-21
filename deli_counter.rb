@@ -16,6 +16,6 @@ end
 def take_a_number(katz_deli, string)
   string = gets.strip
   line
-  puts "#{string} i#{ndex.to_i+1}""
+  puts "#{string} i#{ndex.to_i+1}"
 
 end
