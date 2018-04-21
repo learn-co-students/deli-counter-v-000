@@ -6,8 +6,8 @@ def line(deli = katz_deli)
     puts "The line is currently empty."
   else
     line_numbers = deli.each_index + 1
-    line_numbers.zip(deli)
-    
+    line_numbers.zip(deli) = deli
+
 
     puts "The line is currently #{deli.join(" , ")}."
  end
