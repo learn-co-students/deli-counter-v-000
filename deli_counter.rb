@@ -6,8 +6,8 @@ def line(deli = katz_deli)
     puts "The line is currently empty."
   else
     var queue = [];
-         deli.forEach(function(person, index){
-            queue.push((index + 1).toString() + ". " + person);
+      deli.forEach(function(person, index){
+          queue.push((index + 1).toString() + ". " + person);
           });
           var response = "The line is currently: " + queue.join(", ")
 
