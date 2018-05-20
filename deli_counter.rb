@@ -1,1 +1,24 @@
-# Write your code here.
+katz_deli = []
+
+def take_a_number(array, index)
+   "Welcome, . You are number 1 in line."
+  # take_a_number(katz_deli, "Grace") #=> Welcome, Grace. You are number 2 in line.
+  # take_a_number(katz_deli, "Kent") #=> Welcome, Kent. You are number 3 in line.
+end
+
+def line(array) #=> 
+  count = 1
+  str1 = "The line is currently:"
+  if array.length > 0 
+    until count == array.length
+    array.each do |person|
+      str1 << " #{count}. #{person}"
+    puts "The line is currently: 1. #{array[0]}."
+    count = count+1
+  else 
+   puts "The line is currently empty."
+  end
+end
+  # now_serving(katz_deli) #=> "Currently serving Ada."
+
+  # line(katz_deli) #=> "The line is currently: 1. Grace 2. Kent"# Write your code here.
