@@ -10,16 +10,23 @@ end
 def line(array) #=> 
   count = 1
   str1 = "The line is currently:"
-  if array.length > 0 
-    until count == array.length
+  if array.length == 0
+    str1 = "The line is currently empty."
+  elsif array.length > 0 
+    # until count == array.length
     array.each do |person|
       str1 << " #{count}. #{person}"
-    puts "The line is currently: 1. #{array[0]}."
-    count = count+1
+      # puts "The line is currently: 1. #{person}."
+    count+=1
   # elsif array.length == 0
   # puts "The line is currently empty."
+  end
+# break
+  end
+    puts str1
 end
-end
-end
-end
+# puts str1
+# end
+# puts str1
+# end
 
