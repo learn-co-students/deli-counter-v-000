@@ -10,7 +10,7 @@ def line(number_of_people_in_line)
     line.each.with_index(0) do | name, index |
       line.push("#{index}. #{name}")
     end
-    puts "The line is currently: #{line.join(" ")}"
+    puts "The line is currently: #{line.join(", ")}"
 
   end
 end
@@ -24,7 +24,7 @@ def now_serving(next_in_line)
   if next_in_line.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving customer number #{next_in_line[0]}."
+    puts "Currently serving #{next_in_line[0]}."
     next_in_line.shift
   end
 end
