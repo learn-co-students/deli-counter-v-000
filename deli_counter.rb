@@ -7,10 +7,11 @@ def line(number_of_people_in_line)
   if number_of_people_in_line.length == 0
     puts "The line is currently empty."
   else
-    line.each.with_index(0) do | name, index |
+    line.each.with_index(1) do | name, index |
       line.push("#{index}. #{name}")
-          puts "The line is: #{line.join(" ")}"
     end
+    puts "The line is currently: #{line.join(" ")}"
+
   end
 end
 
