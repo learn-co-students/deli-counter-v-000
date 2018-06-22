@@ -10,7 +10,7 @@ The local deli is putting in a new computerized queue to keep track of their cus
 
 ```ruby
 katz_deli = []
-```
+
 
 Write all of your code in `deli_counter.rb`
 
