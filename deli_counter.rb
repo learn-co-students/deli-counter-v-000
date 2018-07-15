@@ -26,3 +26,12 @@ def take_a_number(katz_deli, name)
   end
 end
 
+def now_serving(katz_deli)
+  if katz_deli.empty?
+    puts "There is nobody waiting to be served!"
+  elsif !katz_deli.empty?
+    name = katz_deli.shift
+    katz_deli.each_with_index { |s| puts "Currently serving #{name}." }
+  end 
+end 
+  
