@@ -10,6 +10,19 @@ def line(katz_deli)
   end 
 end 
 
-def take_a_number
-
+def take_a_number(katz_deli, name)
+  if katz_deli.empty?
+    katz_deli << name
+    display_list = katz_deli.join(" ")
+    counter = 0
+      puts "Welcome, #{display_list}. You are number #{counter + 1} in line."
+    counter += 1
+  elsif !katz_deli.empty?
+    counter = katz_deli.size
+    katz_deli << name
+    display_list = katz_deli[-1]
+      puts "Welcome, #{display_list}. You are number #{counter + 1} in line."
+    counter += 1
+  end
 end
+
