@@ -1,12 +1,13 @@
+
 def line(deli) 
   if deli.empty? == true 
     puts "The line is currently empty."
   else 
-  deli.each_with_index do |position, name|
-  puts `The line is currently: #{position}. #{name} #{position}. #{name} #{position}. #{name}`
+    x = "The line is currently:"
+    deli.each_with_index do |position, name|
+    x.push(`#{position.next}. #{name}`)
+    end
+    puts x
+  end
+
 end
-end
-
-
-
-
