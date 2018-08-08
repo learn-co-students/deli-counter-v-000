@@ -1,12 +1,13 @@
-
-def line(array)
-  if array.length == 0 
+require "pry"
+def line(katz_deli)
+  if katz_deli.length == 0 
     puts "The line is currently empty."
   else 
-    counter = 3
-    other_deli.each_with_index do |name, index|
-      puts "The line is currently: #{index}. #{name}"
-      counter += 1 
+     array = [] 
+  katz_deli.each_with_index do |name, index| 
+  array.push("#{index + 1}. #{name}")
     end 
+   #binding.pry  
+   puts "The line is currently: #{array.join(" ")}" 
   end 
 end 
