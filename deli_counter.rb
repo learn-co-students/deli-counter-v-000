@@ -12,6 +12,7 @@ def line(array)
     name_of_people_in_line.push(name_and_position)
     end
     name_of_people_in_line
+  end 
 end
 
 def take_a_number(array, name)
