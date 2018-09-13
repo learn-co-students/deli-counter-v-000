@@ -1,25 +1,37 @@
-def line(deli_counter_line)
-  if deli_counter_line.empty?
+require "pry"
+
+def line(array)
+  line = []
+  if array.empty?
     puts "The line is currently empty."
   else
-    currently = "The line is currently:"
-    deli_counter_line.each.with_index(1) do |customer, number|
-      currently.concat " #{number}. #{customer}"
+    array.each.with_index(1) do |name, i|
+      cust_pos = "#{i}. #{name}"
+      line << cust_pos
     end
-    puts currently
+    puts "The line is currently: #{line.join(" ")}"
   end
 end
 
-def take_a_number(deli_counter_line, name)
-  deli_counter_line.push name
-  puts "Welcome, #{name}. You are number #{deli_counter_line.length} in line."
+def take_a_number(array, name)
+  if array.empty?
+    array << name
+    puts "Welcome, #{name}. You are number 1 in line."
+  else
+    array.push(name)
+    puts "Welcome, #{name}. You are number #{array.length} in line."
+  end
+
 end
 
-def now_serving(deli_counter_line)
-  if deli_counter_line.empty?
+def now_serving(array)
+  if array.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{deli_counter_line.first}."
-    deli_counter_line.shift
+    puts "Currently serving #{array[0]}."
+    array.slice!(0)
+    array
   end
+
+
 end
