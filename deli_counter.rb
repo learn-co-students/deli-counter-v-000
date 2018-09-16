@@ -12,23 +12,16 @@
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts name, index.
-  
-  def batch_badge_creator(names_array) 
-   #comment out command, forward slash or ctrl
-   badges_array = []  #clear 
-   names_array.each do |name|
-   badges_array << badge_maker(name)
- end
-   badges_array
- end
- 
- def assign_rooms(speakers)
-  speakers.each_with_index.map do |name, index|
-     "Hello, #{name}! You'll be assigned to room #{index + 1}!"
+def take_a_number(deli, name)
+  deli << name
+  puts "Welcome, #{name}. You are number #{deli.length} in line."
+end 
+
+def now_serving(deli)
+  if deli.length > 0
+    puts "Currently serving #{deli[0]}."
+    deli.shift
+  else
+    puts "There is nobody waiting to be served!"
   end
- end 
-  
-  #"Welcome, Ada. You are number 1 in line.")
+end
