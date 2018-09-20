@@ -1,16 +1,16 @@
 # Write your code here.
 
-katz_deli = [ ]
+katz_deli = [ ] # katz_deli = empty array
 
 def line(katz_deli)
-  line_array = [ ]
-  if katz_deli.length == 0
+  line = [ ] # line = empty array
+  if katz_deli.length == 0 # is line is zero
     puts "The line is currently empty."
   else
-    katz_deli.each.with_index(1) do |name, index|
-      line_array.push("#{index}. #{name}")
+    katz_deli.each.with_index(1) do |name, index| # iterates on array (shifted 0 to 1) name and index number
+      line.push("#{index}. #{name}") # pushes number and name to line
     end
-    puts "The line is currently: #{line_array.join(" ")}"
+    puts "The line is currently: #{line.join(" ")}" # line array (1. Grace) joined by space (1. Grace 2. Kent etc)
   end
 end
 
@@ -21,30 +21,10 @@ end
   
 
 def now_serving(katz_deli)
-  if katz_deli.empty?
+  if katz_deli.empty? # if katz_deli = empty array
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{katz_deli[0]}."
-    katz_deli.shift
+    puts "Currently serving #{katz_deli[0]}." # Currently serving nam at index 0
+    katz_deli.shift # removes index 0
   end
 end
-
-# if array.length == 1 # if array is a single element
-#    "#{array[0]}" # returns index zero of array
-#  elsif array.length == 2 # if array is two elements
-#    array.join(" and ") # joins two elements of array with "and"
-#  elsif array.length >=3
-
-# def assign_rooms(names)
-#  assignments = [ ]
-#  names.enum_for(:each_with_index).collect do |name, index|
-#    assignments.push("Hello, #{name}! You'll be assigned to room #{index + 1}!")
-#  end
-#  assignments
-# end
-# 
-# take a number
-# numbr array starts empty
-# katz deli array collects name and index
-# 
-#
