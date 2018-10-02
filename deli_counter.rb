@@ -8,3 +8,17 @@ def line(num_in_line)
     puts "The line is currently: " + new_array.join(" ")
   end
 end
+
+def take_a_number(katz_deli, new_customer)
+  katz_deli.push(new_customer)
+  puts "Welcome, #{new_customer}. You are number #{katz_deli.length} in line."
+end
+
+def now_serving(line)
+  if line == []
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{line[0]}."
+  line.shift
+end
+end
