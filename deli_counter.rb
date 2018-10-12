@@ -1,6 +1,4 @@
 # Write your code here.
-require 'pry'
-
 deli_queue = Array.new
 
 def line(queue)
