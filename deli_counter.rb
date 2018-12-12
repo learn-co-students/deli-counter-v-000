@@ -1,14 +1,16 @@
 
 def line(customers)
     customer_line = []
-    customers.each_with_index do |customer, number|
-      customer_line << "#{number + 1}. #{customer}"
-    end
+    #refactored 5-7 on 8
+    #customers.each_with_index do |customer, number|
+    #  customer_line << "#{number + 1}. #{customer}"
+    #end
+    customers.each_with_index {|customer, number| customer_line << "#{number + 1}. #{customer}"}
     if customer_line == []
       puts "The line is currently empty."
     else
-    puts "The line is currently: " + customer_line.join(" ")
-  end
+      puts "The line is currently: " + customer_line.join(" ")
+    end
 end
 
 def take_a_number(customers, new_customer)
