@@ -1,1 +1,17 @@
-# Write your code here.
+def (katz_deli)
+  if katz_deli.empty?
+    puts "The line is currently empty."
+  else
+    status = "The line is currently:"
+
+    katz_deli.each_with_index do |value, index|
+      status += " #{index.to_i+1}. #{value}"
+    end
+      puts "#{status}"
+  end
+end
+
+def take_a_number(katz_deli, name)
+  katz_deli << name
+  puts "Welcome, #{name}. You are number#{katz_deli.length} in line."
+end
