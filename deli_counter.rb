@@ -1,6 +1,5 @@
 # Write your code here.
-#katz_deli = []
-#other_deli = []
+
 def line(deli)
     if deli == katz_deli
     puts "The line is currently empty."
@@ -43,20 +42,6 @@ def now_serving(deli)
   if deli == katz_deli
     puts "There is nobody waiting to be served!"
   elsif deli == other_deli
-    #line = "Currently serving "
     puts "Currently serving " + other_deli.shift + "."
-    #new3_name = []
-    #other_deli.shift
-    #other_deli.each do |name|
-    #puts "Currently serving #{name}."
-    #end
-    #puts new3_name.last
   end
 end
-#def assign_rooms(attendees)
-  #room_assignments = []
-  #attendees.each_with_index do |attendee, index|
-  #room_assignments << "Hello, #{attendee}! You'll be assigned to room #{index + 1}!"
-  #end
-  #return room_assignments
-#end
