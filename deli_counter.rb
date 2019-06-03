@@ -6,7 +6,7 @@ def line(places)
 if places.empty?
   then puts "The line is currently empty."
 else
-  puts "The Line is currently: #{places.join(" )}."
+  puts "The Line is currently: #{places.join(" ")}."
 end
 end
 
