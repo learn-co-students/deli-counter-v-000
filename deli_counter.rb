@@ -3,9 +3,9 @@
 #Build the line method that shows everyone their current place in the line.
 #If there is nobody in line, it should say "The line is currently empty.".
 def line(places)
-if places.empty?
-  then puts "The line is currently empty."
-else places.each_with_index do { |number,place puts "The Line is currently: #{number}. #{place}."
+if places.empty? puts "The line is currently empty."
+else places.each_with_index do {|place, index| puts "The Line is currently: #{number}. #{place}."
+  number = number.count +1 
 end
 end
 end
