@@ -5,8 +5,7 @@
 def line(places)
 if places.empty?
   then puts "The line is currently empty."
-else places.each do |index|
-  puts "The Line is currently: #{index.count} #{index}."
+else places.each_with_index do { |number,place puts "The Line is currently: #{number}. #{place}."
 end
 end
 end
