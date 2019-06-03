@@ -5,11 +5,11 @@
 def line(places)
 if places.empty?
   then puts "The line is currently empty."
-else
-  puts "The Line is currently: #{places.join(" ")}."
+else places.each do |index|
+  puts "The Line is currently: #{index.count} #{index}."
 end
 end
-
+end
 
 # The take_a_number method should accept two arguments, the array for
 # the current line of people (katz_deli), and a string containing the
