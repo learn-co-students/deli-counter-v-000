@@ -8,7 +8,7 @@ if places.empty?
 else
   new_array = []
   places.each.with_index(1) do |place, index|
-    new_array.push("#{index}. #{place}")
+  new_array.push("#{index}. #{place}")
 end
 puts "The line is currently: #{new_array.join(" ")}"
 end
@@ -22,14 +22,15 @@ end
 #("zero") like computers.
 
 def take_a_number(katz_deli, end_of_line)
-new_array = katz_deli.push(end_of_line)
 if katz_deli.empty?
-elsif katz_deli
-then katz_deli.each_with_index(1) do |name, index|
-end
+then katz_deli.push(end_of_line)
 puts "Welcome, #{end_of_line}. You are number 1 in line."
-end
+elsif katz_deli.count >=1
+  then katz_deli << end_of_line
+  katz_deli.each_with_index(1) do |name, index|
 puts "Welcome, #{name}. You are number #{index} in line."
+end
+end
 end
 
 #Build the now_serving method which should call out (i.e. puts)
