@@ -21,7 +21,15 @@ end
 # . Top-Tip: Remember that people like to count from 1, not from 0
 #("zero") like computers.
 
-def take_a_number
+def take_a_number(katz_deli, end_of_line)
+new_array = katz_deli.push(end_of_line)
+if katz_deli.empty?
+elsif katz_deli
+then katz_deli.each_with_index(1) do |name, index|
+end
+puts "Welcome, #{end_of_line}. You are number 1 in line."
+end
+puts "Welcome, #{name}. You are number #{index} in line."
 end
 
 #Build the now_serving method which should call out (i.e. puts)
