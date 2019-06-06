@@ -22,15 +22,8 @@ end
 #("zero") like computers.
 
 def take_a_number(katz_deli, end_of_line)
-if katz_deli.empty?
-then katz_deli.push(end_of_line)
-puts "Welcome, #{end_of_line}. You are number 1 in line."
-elsif katz_deli.count >=1
-  then katz_deli << end_of_line
-  katz_deli.each_with_index(1) do |name, index|
-puts "Welcome, #{name}. You are number #{index} in line."
-end
-end
+katz_deli.push(end_of_line)
+puts "Welcome, #{end_of_line}. You are number #{katz_deli.count} in line."
 end
 
 #Build the now_serving method which should call out (i.e. puts)
@@ -38,5 +31,17 @@ end
 # If there is nobody in line,
 # it should call out (puts) that "There is nobody waiting to be served!"
 
-def now_serving
+#now_serving
+#there are no people in line
+#should say that the line is empty (FAILED - 1)
+#there are people in line
+#should serve the first person in line and remove them from the queue (FAILED - 2)
+
+def now_serving(katz_deli)
+  if katz_deli.empty?
+    then puts "There is nobody waiting to be served!"
+  else
+   puts "Currently serving #{katz_deli[0]}."
+   katz_deli.shift(1)
+end
 end
