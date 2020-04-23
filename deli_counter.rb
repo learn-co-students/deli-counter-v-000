@@ -1,28 +1,24 @@
 # Write your code here.
 katz_deli = []
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
-end
-
-def now_serving(katz_deli)
-  if katz_deli.length == 0
-    puts "There is nobody waiting to be served!"
+def line(katz_deli)
+  if katz_deli.size == 0
+    puts "The line is currently empty."
   else
-    puts "Currently serving #{katz_deli.shift}."
+    current_line = katz_deli.collect{|person| " #{katz_deli.index(person)+1}. " << person}
+    puts "The line is currently:" << current_line.join
   end
 end
 
-def line(katz_deli)
-  if katz_deli.length == 0
-    puts "The line is currently empty."
-  else
-    message="The line is currently:"
+def take_a_number(katz_deli, new_person)
+  katz_deli.push(new_person)
+  puts "Welcome, #{new_person}. You are number #{katz_deli.index(new_person) + 1} in line."
+end
 
-    katz_deli.each_with_index do |value, index|
-      message << " #{index.to_i+1}. #{value}"
-    end
-    puts "#{message}"
+def now_serving(katz_deli)
+  if katz_deli.size == 0
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{katz_deli.shift}."
   end
 end
