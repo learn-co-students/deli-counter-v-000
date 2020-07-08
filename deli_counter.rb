@@ -1,24 +1,27 @@
-def line(katz_deli)
-  if katz_deli.count == 0
+require 'pry'
+
+def line(deli)
+  if deli.empty?
     puts "The line is currently empty."
   else
-    line_order = ["The line is currently:"]
-    katz_deli.each_with_index do |a, b|
-      line_order << "#{b + 1}. #{a}"
-    end
-  puts line_order.join(" ")
+    current_line = "The line is currently:"
+      deli.each_with_index do |customer, index|
+        current_line << " #{index + 1}. #{customer}"
+      end
+    puts current_line
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.count} in line."
+def take_a_number(deli, name)
+  deli << name
+  puts "Welcome, #{name}. You are number #{deli.length} in line."
 end
 
-def now_serving(katz_deli)
-  if katz_deli.count == 0
+def now_serving(deli)
+  if deli.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{katz_deli.shift}."
+    puts "Currently serving #{deli.first}."
+    deli.shift
   end
 end
