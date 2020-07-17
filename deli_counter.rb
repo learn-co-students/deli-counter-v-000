@@ -1,1 +1,25 @@
-# Write your code here.
+def line (deli_line)
+  if deli_line.empty?
+    puts "The line is currently empty."
+  else
+    current_line = "The line is currently:"
+      deli_line.each.with_index(1) do |name, position|
+      current_line << " #{position}. #{name}"
+      end
+    puts current_line
+  end
+end
+
+def take_a_number(deli_line, name)
+    deli_line << name
+    puts "Welcome, #{name}. You are number #{deli_line.length} in line."
+end
+
+def now_serving (deli_line)
+  if deli_line.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    currently = deli_line.shift
+    puts "Currently serving #{currently}."
+  end
+end
